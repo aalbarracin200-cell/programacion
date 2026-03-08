@@ -1,1 +1,156 @@
+#Nivel 1
+#1-a
+def edad():
+    edad_usuario = int(input("Ingrese su edad: "))
+    print("Tu edad es:", edad_usuario, "años")
+
+edad()
+
+#1-b
+def suma():
+    num1 = float(input("Ingrese el primer número: "))
+    num2 = float(input("Ingrese el segundo número: "))
+    resultado = num1 + num2
+    print("La suma es:", resultado)
+
+suma()
+
+#1-c
+import random
+
+def num_aleatorio():
+    numero = random.randint(1, 100)
+    intento = int(input("Adivina el número entre 1 y 100: "))
+
+    if intento == numero:
+        print("¡Felicitaciones, adivinaste el número!")
+    elif intento > numero:
+        print("El número es menor")
+    else:
+        print("El número es mayor")
+
+num_aleatorio()
+
+#1-d
+def contador_vocales():
+    texto = input("Ingrese una cadena: ")
+    vocales = "aeiouAEIOU"
+    contador = 0
+
+    for letra in texto:
+        if letra in vocales:
+            contador += 1
+
+    print("Número de vocales:", contador)
+
+contador_vocales()
+
+#Nivel 2
+
+#2-a
+def palindromo(palabra):
+    if palabra == palabra[::-1]:
+        print(True)
+    else:
+        print(False)
+
+palindromo("reconocer")
+
+#2-b
+def calcular_potencia(base, exponente):
+    resultado = base ** exponente
+    print("Resultado:", resultado)
+
+calcular_potencia(2, 3)
+
+#2-c
+def calcular_media(lista):
+    media = sum(lista) / len(lista)
+    print("La media es:", media)
+
+calcular_media([5, 8, 10, 7])
+
+#Nivel 3
+
+#3-a
+def invertir_cadena(cadena):
+    return cadena[::-1]
+
+print(invertir_cadena("python"))
+
+#3-b
+def mayor_de_tres_numeros(numero1, numero2, numero3):
+    return max(numero1, numero2, numero3)
+
+print(mayor_de_tres_numeros(5, 9, 3))
+
+#3-c
+import math
+
+def calcular_area(radio, altura):
+    area = 2 * math.pi * radio * altura + 2 * math.pi * radio**2
+    return area
+
+print(calcular_area(3, 5))
+
+#3-d
+def buscar_palabra(cadena, palabra):
+    return palabra in cadena
+
+print(buscar_palabra("hola mundo", "mundo"))
+
+#Nivel 4
+
+#4-a
+def promedio(*numeros):
+    return sum(numeros) / len(numeros)
+
+print(promedio(5, 7, 9, 10))
+
+#4-b
+def multiplicar_lista(lista, numero):
+    nueva_lista = []
+    
+    for elemento in lista:
+        nueva_lista.append(elemento * numero)
+    
+    return nueva_lista
+
+print(multiplicar_lista([1,2,3,4], 3))
+
+#4-c
+def mayor_de_varios_numeros(*numeros):
+    return max(numeros)
+
+print(mayor_de_varios_numeros(4, 8, 1, 20, 5))
+
+#4-d
+def calcular_mediana(*numeros):
+    lista = sorted(numeros)
+    n = len(lista)
+
+    if n % 2 == 1:
+        return lista[n//2]
+    else:
+        return (lista[n//2 - 1] + lista[n//2]) / 2
+
+print(calcular_mediana(3, 7, 1, 9, 5))
+
+#4-d
+def calcular_mediana(*numeros):
+    lista = sorted(numeros)
+    n = len(lista)
+
+    if n % 2 == 1:
+        return lista[n//2]
+    else:
+        return (lista[n//2 - 1] + lista[n//2]) / 2
+
+print(calcular_mediana(3, 7, 1, 9, 5))
+
+#4-e
+def contar_ocurrencias(cadena, palabra):
+    return cadena.count(palabra)
+
+print(contar_ocurrencias("hola mundo hola python hola", "hola"))
 
