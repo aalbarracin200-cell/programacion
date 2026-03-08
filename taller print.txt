@@ -1,0 +1,40 @@
+print("     *")
+print("    * *")
+print("   *   *")
+print("  *     *")
+print(" ***   ***")
+print("   *   *")
+print("   *   *")
+print("   *****")
+
+#1 \n
+
+print("     *\n    * *\n   *   *\n  *     *\n ***   ***\n   *   *\n   *   *\n   *****")
+
+#2 proporcion
+
+print("      ***")
+print("     *   *")
+print("    *      *")
+print("   *        *")
+print(" *****    *****")
+print("   *        *")
+print("   *        *")
+print("   **********")
+
+#3 duplicar la flecha
+
+print(("     *\n    * *\n   *   *\n  *     *\n ***   ***\n   *   *\n   *   *\n   *****\n") * 2)
+
+#4 eliminar comillas
+#4rta:Python detecta que la cadena de texto no fue cerrada correctamente. El error aparece en la línea donde Python se da cuenta de que falta la comilla
+
+#5 parentesis
+#5rta:Python indica que el paréntesis de la función no fue cerrado, por lo que no puede interpretar correctamente la instrucción.
+
+#6 cambiar print
+#6rta: print es la función correcta, pero Print o PRINT no existen.
+
+#7 comillas por apostrofes
+#7rta:El programa funciona exactamente igual.
+xs
