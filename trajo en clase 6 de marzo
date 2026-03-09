@@ -1,0 +1,209 @@
+# 1. Clase ANIMAL e instancia GATO
+class Animal:
+
+    def hacer_sonido(self):
+        print("El gato dice: Miau")
+
+    def mostrar_info(self):
+        print(self.nombre, self.especie, self.edad, self.color)
+
+
+gato = Animal()
+gato.nombre = "Michi"
+gato.especie = "Felino"
+gato.edad = 2
+gato.color = "Gris"
+
+gato.hacer_sonido()
+gato.mostrar_info()
+
+
+# 2. Clase VEHICULO e instancia MOTO
+class Vehiculo:
+
+    def acelerar(self):
+        print("La moto está acelerando")
+
+    def mostrar_info(self):
+        print(self.marca, self.modelo, self.color, self.velocidad)
+
+
+moto = Vehiculo()
+moto.marca = "Yamaha"
+moto.modelo = "MT07"
+moto.color = "Negra"
+moto.velocidad = 180
+
+moto.acelerar()
+moto.mostrar_info()
+
+
+# 3. Clase VEHICULO e instancia CARRO
+carro = Vehiculo()
+carro.marca = "Toyota"
+carro.modelo = "Corolla"
+carro.color = "Blanco"
+carro.velocidad = 200
+
+carro.acelerar()
+carro.mostrar_info()
+
+
+# 4. Clase COMIDA e instancia BANDEJA PAISA
+class Comida:
+
+    def preparar(self):
+        print("Preparando la comida")
+
+    def mostrar_info(self):
+        print(self.nombre, self.origen, self.calorias, self.precio)
+
+
+bandeja_paisa = Comida()
+bandeja_paisa.nombre = "Bandeja Paisa"
+bandeja_paisa.origen = "Colombia"
+bandeja_paisa.calorias = 1200
+bandeja_paisa.precio = 25000
+
+bandeja_paisa.preparar()
+bandeja_paisa.mostrar_info()
+
+
+# 5. Clase ARBOL e instancia PINO
+class Arbol:
+
+    def crecer(self):
+        print("El árbol está creciendo")
+
+    def mostrar_info(self):
+        print(self.tipo, self.altura, self.edad, self.color)
+
+
+pino = Arbol()
+pino.tipo = "Pino"
+pino.altura = 10
+pino.edad = 5
+pino.color = "Verde"
+
+pino.crecer()
+pino.mostrar_info()
+
+
+# 6. Clase LIBRO e instancia NOVELA
+class Libro:
+
+    def leer(self):
+        print("Leyendo el libro")
+
+    def mostrar_info(self):
+        print(self.titulo, self.autor, self.paginas, self.genero)
+
+
+novela = Libro()
+novela.titulo = "Cien Años de Soledad"
+novela.autor = "Gabriel Garcia Marquez"
+novela.paginas = 400
+novela.genero = "Novela"
+
+novela.leer()
+novela.mostrar_info()
+
+
+# 7. Clase PELICULA e instancia MONSTERS INC
+class Pelicula:
+
+    def reproducir(self):
+        print("Reproduciendo pelicula")
+
+    def mostrar_info(self):
+        print(self.titulo, self.duracion, self.genero, self.anio)
+
+
+monsters_inc = Pelicula()
+monsters_inc.titulo = "Monsters Inc"
+monsters_inc.duracion = 92
+monsters_inc.genero = "Animacion"
+monsters_inc.anio = 2001
+
+monsters_inc.reproducir()
+monsters_inc.mostrar_info()
+
+
+# 8. Clase DISPOSITIVO e instancia PORTATIL
+class Dispositivo:
+
+    def encender(self):
+        print("El dispositivo se está encendiendo")
+
+    def mostrar_info(self):
+        print(self.marca, self.tipo, self.ram, self.almacenamiento)
+
+
+portatil = Dispositivo()
+portatil.marca = "HP"
+portatil.tipo = "Laptop"
+portatil.ram = "16GB"
+portatil.almacenamiento = "512GB"
+
+portatil.encender()
+portatil.mostrar_info()
+
+
+# 9. Clase SERVICIO e instancia ENERGIA
+class Servicio:
+
+    def activar(self):
+        print("Servicio activado")
+
+    def mostrar_info(self):
+        print(self.nombre, self.proveedor, self.costo, self.tipo)
+
+
+energia = Servicio()
+energia.nombre = "Energia"
+energia.proveedor = "Empresa Electrica"
+energia.costo = 50000
+energia.tipo = "Publico"
+
+energia.activar()
+energia.mostrar_info()
+
+
+# 10. Clase EMPAQUE e instancia CAJA
+class Empaque:
+
+    def abrir(self):
+        print("La caja se está abriendo")
+
+    def mostrar_info(self):
+        print(self.material, self.tamano, self.peso, self.color)
+
+
+caja = Empaque()
+caja.material = "Carton"
+caja.tamano = "Mediana"
+caja.peso = "1kg"
+caja.color = "Marron"
+
+caja.abrir()
+caja.mostrar_info()
+
+
+# 11. Clase PERSONA e instancia ESTUDIANTE
+class Persona:
+
+    def estudiar(self):
+        print("El estudiante está estudiando")
+
+    def mostrar_info(self):
+        print(self.nombre, self.edad, self.carrera, self.universidad)
+
+
+estudiante = Persona()
+estudiante.nombre = "Alex"
+estudiante.edad = 20
+estudiante.carrera = "Ingenieria"
+estudiante.universidad = "Universidad Autonoma De Bucaramanga"
+
+estudiante.estudiar()
+estudiante.mostrar_info()
