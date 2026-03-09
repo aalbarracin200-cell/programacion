@@ -1,0 +1,33 @@
+print("Implementar una calculadora mediante la creación de una clase 'Calculadora' con métodos para las operaciones básicas")
+
+class Calculadora:
+
+    def suma(self, a, b):
+        resultado = a + b
+        print("Suma:", resultado)
+
+    def resta(self, a, b):
+        resultado = a - b
+        print("Resta:", resultado)
+
+    def multiplicacion(self, a, b):
+        resultado = a * b
+        print("Multiplicación:", resultado)
+
+    def division_entera(self, a, b):
+        resultado = a // b
+        print("División entera:", resultado)
+
+    def modulo(self, a, b):
+        resultado = a % b
+        print("Módulo:", resultado)
+
+    def potencia(self, a, b):
+        resultado = a ** b
+        print("Potencia:", resultado)
+
+    def raiz_cuadrada(self, a):
+        resultado = a ** 0.5
+        print("Raíz cuadrada:", resultado)
+
+
