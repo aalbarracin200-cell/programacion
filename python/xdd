@@ -1,0 +1,34 @@
+class Personaje:
+
+    def __init__(self, nombre):
+        self.nombre = nombre
+        self.nivel = 1
+        self.energia = 100
+
+    def atacar(self):
+        self.energia -= 10
+        print(self.nombre, "ha atacado!")
+        print("Energía restante:", self.energia)
+
+    def descansar(self):
+        self.energia = 100
+        print(self.nombre, "ha descansado y recuperó energía.")
+
+    def mostrar_estado(self):
+        print("----- ESTADO DEL PERSONAJE -----")
+        print("Nombre:", self.nombre)
+        print("Nivel:", self.nivel)
+        print("Energía:", self.energia)
+
+    def subir_nivel(self):
+        self.nivel += 1
+        print(self.nombre, "subió al nivel", self.nivel)
+
+
+mi_avatar = Personaje("Alex")
+
+mi_avatar.mostrar_estado()
+mi_avatar.atacar()
+mi_avatar.descansar()
+mi_avatar.subir_nivel()
+mi_avatar.mostrar_estado()
