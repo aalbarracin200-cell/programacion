@@ -1,0 +1,39 @@
+# class-> medicamento - hija -> drogreria 
+#atributos->nombre, numero de pastillas,formula medica, inventario
+#atributos hija->  inventario, ventas totales
+#metodos->vender, agotados
+#metodos hija->agregar medicamentos, vender, mostrar bajo stok
+
+class Medicamento:
+    def __int__ (self,require_formula , nombre , stock, precio):
+        self.requiere_formula = requiere_formula
+        self.nombre = nombre
+        self.stock = stock
+        self.precio = precio
+        
+    def __str__(self):
+        retur f"medicamento:{self.nimbre} | stock: {self.stock} | precio: {self.precio}"
+        
+    def vender(self,cantidad):
+        if cantidad <=0:
+            print(f"cantidad invalida para '{self.nombre}")
+            return 0
+        if self.stock >= cantidad:
+            self.stock-= cantidad
+            self.precio * cantidad
+            return 0
+    
+    def se_agota(self):
+        if self.stock < 5:
+            return f"ahi que comprar {self.nombre, quedan solo {self.stock}"
+        else:
+            return f"{self.nombre} tiene suficiente stock ({self.stock})"
+        
+        
+class Drogeria:
+    def __int__(self):
+        self.inventario = []
+        self.ventas_totales = 0
+    
+    def agregar_medicamentos(self,medicamenrtos)
+
